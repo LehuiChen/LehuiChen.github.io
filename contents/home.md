@@ -4,7 +4,7 @@ Home address:  **Jieyang, Guangdong**
 
 Contact number:  **13927055769**
 
-Personal hobbies:  **Basketball**,**swimming**.
+Personal hobbies:  **Basketball**,**swimming**
 
 #### Contact
 
