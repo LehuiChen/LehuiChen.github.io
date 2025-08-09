@@ -1,16 +1,12 @@
-#### Submitted
+#### **Academic papers**
 
-- <strong>S. Li</strong>, X. Yang*, A. Cao*, K. Fan, Y. Liu, C. Wang, and Q. Niu. LaNCoR: Label Noise-Contrastive Robust Learning for Seismic Signal Processing with Application to Microseismic Arrival Time Picking. <strong>Rej :)</strong> [[Code]](https://github.com/senli1073/LaNCor)
+- C. Feng, L. Cai, G. Zhu, <strong>L. Chen</strong>, X. Xie and J. Guo* (2025). Nanocellulose and multi-walled carbon nanotubes reinforced polyacrylamide/sodium alginate conductive hydrogel as flexible sensor. <strong>Journal of Colloid and Interface Science</strong>. [[Paper]](https://doi.org/10.1016/j.jcis.2024.08.067)
 
-#### Published
+#### **Subject** **competitions**
 
-- X. Yang, <strong>S. Li</strong>, A. Cao*, C. Wang*, Y. Liu, X. Bai, and Q. Niu (2024). Deep Transfer Learning for P-wave Arrival Identification and Automatic Seismic Source Location in Underground Mines. <strong>International Journal of Rock Mechanics and Mining Sciences</strong>. [[Paper]](https://doi.org/10.1016/j.ijrmms.2024.105888)
-
-- <strong>S. Li</strong>, X. Yang*, A. Cao*, C. Wang, Y. Liu, Y. Liu, and Q. Niu (2024). SeisT: A Foundational Deep-Learning Model for Earthquake Monitoring Tasks. <strong>IEEE Transactions on Geoscience and Remote Sensing</strong>. [[Paper]](https://doi.org/10.1109/TGRS.2024.3371503) [[Code]](https://github.com/senli1073/SeisT)
-
-- A. Cao, X. Yang, C. Wang*, <strong>S. Li</strong>, Y. Liu, L. Dou, and Q. Niu (2023). High-Precision Phase Picking and Automatic Source Locating Method for Seismicity in Mines Based on Deep Transfer Learning. <strong>Journal of China Coal Society</strong>. [[Paper]](https://doi.org/10.13225/j.cnki.jccs.2023.0095)
-
-- A. Cao, Y. Liu, X. Yang*, <strong>S. Li</strong>, C. Wang, X. Bai, and Y. Liu (2022). Physical Index and Data Fusion-Driven Method for Coal Burst Prediction in Time Sequence. <strong>Journal of China Coal Society</strong>. [[Paper]](https://doi.org/10.13225/j.cnki.jccs.2022.0680)
-
-- X. Yang, X. Yu, C. Zhang, <strong>S. Li</strong>, and Q. Niu (2021). MineGPS: Battery-Free Localization Base Station for Coal Mine Environment. <strong>IEEE Communications Letters</strong>. [[Paper]](https://doi.org/10.1109/LCOMM.2021.3081593)
+- **China International University Student Innovation Competition (2024)**. **Gold** **Prize **.[[PDF]](https://drive.google.com/file/d/1L9IS5AaCGyJ-I2BiUCh3M2tNL8wyenS-/view?usp=drive_link) [[PDF]](https://drive.google.com/file/d/1ec-anX7CmHLEHtUW_3VYUaOHWpTXqKLG/view?usp=drive_link) 
+- **Guangdong** **Province** **Branch** **of** **the** **National** **College** **Student** **Mathematical** **Modeling** **Competition**. **Third** **Prize**.[[PDF]](https://drive.google.com/file/d/14YcZ_ZJqPpW_7zoTlOL27otFkNUAXU4U/view?usp=drive_link) 
+- **National** **College** **Student** **Mathematics** **Competition**. **Third** **Prize**.[[PDF]](https://drive.google.com/file/d/1wUXIFLZCIse7lvCJ2pR7J0F2BcfN2-7w/view?usp=drive_link) 
+- **Win in Guangzhou and Guangdong-Hong Kong-Macao Greater Bay Area College Student Entrepreneurship Competition**. **First** **Prize**.[[PDF]](https://drive.google.com/file/d/12gkki03IUYB3N6Vo24hObxgzOxfXvZ_-/view?usp=drive_link) 
+- **Blue Bridge Cup Programming Contest Guangdong Provincial Preliminary (Python Group)**. **Second** **Prize**.[[PDF]](https://drive.google.com/file/d/12wP1-CqEd2eq03Tve6q1GhPD_h8ICI-r/view?usp=drive_link) 
 
