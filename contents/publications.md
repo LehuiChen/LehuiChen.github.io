@@ -4,7 +4,7 @@
 
 #### **Subject** **competitions**
 
-- **China International University Student Innovation Competition (2024)**. **Gold** **Prize **.[[PDF]](https://drive.google.com/file/d/1L9IS5AaCGyJ-I2BiUCh3M2tNL8wyenS-/view?usp=drive_link) [[PDF]](https://drive.google.com/file/d/1ec-anX7CmHLEHtUW_3VYUaOHWpTXqKLG/view?usp=drive_link) 
+- **China International University Student Innovation Competition (2024)**. **Gold** **Prize**.[[PDF]](https://drive.google.com/file/d/1L9IS5AaCGyJ-I2BiUCh3M2tNL8wyenS-/view?usp=drive_link) [[PDF]](https://drive.google.com/file/d/1ec-anX7CmHLEHtUW_3VYUaOHWpTXqKLG/view?usp=drive_link) 
 - **Guangdong** **Province** **Branch** **of** **the** **National** **College** **Student** **Mathematical** **Modeling** **Competition**. **Third** **Prize**.[[PDF]](https://drive.google.com/file/d/14YcZ_ZJqPpW_7zoTlOL27otFkNUAXU4U/view?usp=drive_link) 
 - **National** **College** **Student** **Mathematics** **Competition**. **Third** **Prize**.[[PDF]](https://drive.google.com/file/d/1wUXIFLZCIse7lvCJ2pR7J0F2BcfN2-7w/view?usp=drive_link) 
 - **Win in Guangzhou and Guangdong-Hong Kong-Macao Greater Bay Area College Student Entrepreneurship Competition**. **First** **Prize**.[[PDF]](https://drive.google.com/file/d/12gkki03IUYB3N6Vo24hObxgzOxfXvZ_-/view?usp=drive_link) 
