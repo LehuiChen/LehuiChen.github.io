@@ -4,13 +4,15 @@ Home address:  **Jieyang, Guangdong**
 
 Contact number:  **13927055769**
 
-Personal hobbies:  **Basketball**,**swimming**
+Personal hobbies:  **Basketball**,**Swimming**.
 
 #### Contact
 
 Email: lehui_chen_gdut[at]163.com
 
 #### Education
-B.E., Chemical Engineering and Technology, College of Light Industry and Chemical Engineering, Guangdong University of Technology，2022.09—2026.
+B.E., Chemical Engineering and Technology, College of Light Industry and Chemical Engineering, Guangdong University of Technology，2022.09—2026.06.(expected)
 
 #### Research Interests
+
+Computer Science, Physical Chemistry, Organic Chemistry, AI4S.
