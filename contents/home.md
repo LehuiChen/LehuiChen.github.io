@@ -14,5 +14,3 @@ Email: lehui_chen_gdut[at]163.com
 B.E., Chemical Engineering and Technology, College of Light Industry and Chemical Engineering, Guangdong University of Technology，2022.09—2026.
 
 #### Research Interests
-![image-20250810162953197](C:\Users\30453\AppData\Roaming\Typora\typora-user-images\image-20250810162953197.png)
-
