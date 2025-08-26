@@ -5,7 +5,7 @@
 ## 成员展示
 
 ### Tim
-![Tim](static/assets/img/Tim.jpg)
+<img src="static/assets/img/Tim.jpg" alt="Tim" width="150" height="150" style="border-radius:50%; margin:10px 0;">
 
 ### Yantyn
-![Yantyn](static/assets/img/Yantyn.jpg)
+<img src="static/assets/img/Yantyn.jpg" alt="Yantyn" width="150" height="150" style="border-radius:50%; margin:10px 0;">
