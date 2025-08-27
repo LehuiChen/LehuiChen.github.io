@@ -1,5 +1,18 @@
 
-- **Advanced Individuals in Academic and Technological Festival (GDUT)**,2024.[[PDF]](https://1drv.ms/b/c/e77b8a6b4e53f728/EeqS6KqeEEhEjozVncm5gm8ByR2nXQPh3XxctSzxVyUyNg) 
-- **Third-Prize Scholarship (GDUT)**, 2024.[[PDF]](https://1drv.ms/b/c/e77b8a6b4e53f728/EfKcDeMjAC9Np3Y_PgCP4jwBA7CRt_b1VI9CEtSSvMsceQ?e=X7JPjB) 
-- **Third-Prize Scholarship (GDUT)**, 2023.[[PDF]](https://1drv.ms/b/c/e77b8a6b4e53f728/EY-0gv-qAzRNgH5xEac6rHABoZoKhdAB1G8q9Sg5f4g0ZA?e=cjRehh) 
-- **National Encouragement Scholarship**, 2023.
+
+<p>
+<b>1.Advanced Individuals in Academic and Technological Festival (GDUT), 2024</b>. 
+<a href="static/assets/pdf/advanced_individuals_gdut_2024.pdf" target="_blank">[PDF]</a>
+</p>
+
+<p>
+<b>2.Third-Prize Scholarship (GDUT), 2024</b>. 
+<a href="static/assets/pdf/third_prize_scholarship_gdut_2024.pdf" target="_blank">[PDF]</a>
+</p>
+
+<p>
+<b>3.Third-Prize Scholarship (GDUT), 2023</b>. 
+<a href="static/assets/pdf/third_prize_scholarship_gdut_2023.pdf" target="_blank">[PDF]</a>
+</p>
+**4.National Encouragement Scholarship**, **2023**.
+
