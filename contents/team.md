@@ -9,8 +9,9 @@ We sincerely thank the College of Innovation and Entrepreneurship of Guangdong U
     <h3>ztWong</h3>
     <img src="static/assets/img/ztWong.jpg" alt="ztWong" 
          style="width:100%; height:300px; object-fit:cover; border-radius:12px; margin:15px 0;">
-    <p>这是 ztWong 的介绍文字</p>
+    <p>爱自由、爱旅行</p>
   </div>
+
 
 
   <!-- 卡片 2 -->
@@ -18,8 +19,9 @@ We sincerely thank the College of Innovation and Entrepreneurship of Guangdong U
     <h3>Yantyn</h3>
     <img src="static/assets/img/Yantyn.jpg" alt="Yantyn" 
          style="width:100%; height:300px; object-fit:cover; border-radius:12px; margin:15px 0;">
-    <p>这是 Yantyn 的介绍文字</p>
+    <p>主持人届的冉冉新星</p>
   </div>
+
 
 
   <!-- 卡片 3 -->
@@ -27,8 +29,9 @@ We sincerely thank the College of Innovation and Entrepreneurship of Guangdong U
     <h3>Lehele</h3>
     <img src="static/assets/img/Lehele.jpg" alt="Lehele" 
          style="width:100%; height:300px; object-fit:cover; border-radius:12px; margin:15px 0;">
-    <p>这是 Lehele 的介绍文字</p>
+    <p>怕热的东莞湖南人</p>
   </div>
+
 
 
   <!-- 卡片 4 -->
@@ -36,7 +39,8 @@ We sincerely thank the College of Innovation and Entrepreneurship of Guangdong U
     <h3>Lehui</h3>
     <img src="static/assets/img/Lehui.jpg" alt="Lehui" 
          style="width:100%; height:300px; object-fit:cover; border-radius:12px; margin:15px 0;">
-    <p>这是 Lehui 的介绍文字</p>
+    <p>广东工业大学2022级学生</p>
   </div>
+
 
 </div>
