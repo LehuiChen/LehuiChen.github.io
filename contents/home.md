@@ -1,4 +1,9 @@
-He is currently pursuing a bachelor's degree in chemical engineering and technology at the School of Light Industry and Chemical Engineering of Guangdong University of Technology.[[PDF]](https://1drv.ms/b/c/e77b8a6b4e53f728/EWs00_LR9elBvVBspZd4gzUBy8dKi3L5F9D2tp98dCo31w?e=lmEs5F) [[PDF]](https://1drv.ms/b/c/e77b8a6b4e53f728/ERbasR1ld8BIhKtmagurEMoBjdRk55KWQyqDEBvUx2X2CA?e=JWtrfe) 
+<p>
+He is currently pursuing a bachelor's degree in chemical engineering and technology 
+at the School of Light Industry and Chemical Engineering of Guangdong University of Technology. 
+<a href="static/assets/pdf/example1.pdf" target="_blank">[PDF]</a> 
+<a href="static/assets/pdf/example2.pdf" target="_blank">[PDF]</a>
+</p>
 
 Home address:  **Jieyang, Guangdong**
 
