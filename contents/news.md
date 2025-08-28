@@ -38,8 +38,9 @@
     <img src="static/assets/img/news/event4.jpg" alt="2025-08-03，中山大学"
          style="width:100%; height:300px; object-fit:cover; display:block; border-radius:12px;">
     <div style="padding:12px; text-align:center; font-size:1rem; font-weight:500; color:#444; background:#fafafa; margin-top:10px;">
-      🎉团队拿到“国创赛(2025)广东省分赛银奖”
+      🎉团队拿到“国创赛(2025)”广东省分赛银奖
     </div>
   </div>
+
 
 </div>
