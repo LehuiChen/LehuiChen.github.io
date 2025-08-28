@@ -1,9 +1,8 @@
 const content_dir = 'contents/'
 const config_file = 'config.yml'
-const section_names = ['home', 'publications', 'awards', 'team']
+const section_names = ['home', 'publications', 'awards', 'team', 'news']
 
 window.addEventListener('DOMContentLoaded', event => {
-  // Activate Bootstrap scrollspy
   const mainNav = document.body.querySelector('#mainNav');
   if (mainNav) {
     new bootstrap.ScrollSpy(document.body, {
@@ -12,7 +11,6 @@ window.addEventListener('DOMContentLoaded', event => {
     });
   };
 
-  // Collapse navbar
   const navbarToggler = document.body.querySelector('.navbar-toggler');
   const responsiveNavItems = [].slice.call(
     document.querySelectorAll('#navbarResponsive .nav-link')
@@ -25,7 +23,6 @@ window.addEventListener('DOMContentLoaded', event => {
     });
   });
 
-  // Load config.yml
   fetch(content_dir + config_file)
     .then(response => response.text())
     .then(text => {
@@ -40,7 +37,6 @@ window.addEventListener('DOMContentLoaded', event => {
     })
     .catch(error => console.log(error));
 
-  // Load markdown sections
   marked.use({ mangle: false, headerIds: false })
   section_names.forEach((name, idx) => {
     fetch(content_dir + name + '.md')
@@ -49,7 +45,6 @@ window.addEventListener('DOMContentLoaded', event => {
         const html = marked.parse(markdown);
         document.getElementById(name + '-md').innerHTML = html;
       }).then(() => {
-        // MathJax
         MathJax.typeset();
       })
       .catch(error => console.log(error));

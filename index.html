@@ -54,6 +54,24 @@
   <!-- Core JS -->
   <script type="text/javascript" src="static/js/scripts.js"></script>
   <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
+
+  <style>
+    /* News 样式 */
+    #news-md .card {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      transition: transform 0.2s ease-in-out;
+    }
+    #news-md .card:hover {
+      transform: translateY(-5px);
+    }
+    #news-md img {
+      max-height: 200px;
+      object-fit: cover;
+    }
+  </style>
 </head>
 
 <body id="page-top">
@@ -71,6 +89,7 @@
           <li class="nav-item"><a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a></li>
           <li class="nav-item"><a class="nav-link me-lg-3" href="#awards">AWARDS</a></li>
           <li class="nav-item"><a class="nav-link me-lg-3" href="#team">TEAM</a></li>
+          <li class="nav-item"><a class="nav-link me-lg-3" href="#news">NEWS</a></li>
         </ul>
       </div>
     </div>
@@ -121,6 +140,14 @@
     <div class="container px-5">
       <header><h2 id="team-subtitle"><i class="bi bi-people-fill"></i>&nbsp;TEAM</h2></header>
       <div class="main-body" id="team-md"></div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="news">
+    <div class="container px-5">
+      <header><h2 id="news-subtitle"><i class="bi bi-newspaper"></i>&nbsp;NEWS</h2></header>
+      <div class="row" id="news-md"></div>
     </div>
   </section>
 
