@@ -1,3 +1,5 @@
+This section is designed to document certain activities.
+
 ## News 🎉
 
 <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; max-width:1000px; margin:0 auto;">
