@@ -1,4 +1,6 @@
+<p style="font-size:18px; line-height:1.6; color:#333;">
 This section is designed to document certain activities.
+</p>
 
 ## News 🎉
 
