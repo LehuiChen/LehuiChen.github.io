@@ -2,9 +2,8 @@
 He is currently pursuing a bachelor's degree in chemical engineering and technology 
 at the <a href="https://qghgxy.gdut.edu.cn/" target="_blank">School of chemical Engineering and Light industry</a> of 
 <a href="https://www.gdut.edu.cn/" target="_blank">Guangdong University of Technology</a>. 
-<a href="static/assets/pdf/resume1.pdf" target="_blank">[PDF]</a> 
-<a href="static/assets/pdf/resume2.pdf" target="_blank">[PDF]</a>
 </p>
+
 
 Home address:  **Jieyang, Guangdong**
 
