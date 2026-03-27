@@ -150,7 +150,7 @@ section {
     display: flex;
     align-items: flex-end;
     min-height: 28rem;
-    padding: 8rem 0 9rem;
+    padding: 7.6rem 0 8.2rem;
     background-position: center;
     background-size: cover;
     isolation: isolate;
@@ -160,29 +160,27 @@ section {
     content: "";
     position: absolute;
     inset: 0;
-    background:
-        linear-gradient(180deg, rgba(247, 251, 255, 0.28) 0%, rgba(235, 244, 255, 0.88) 76%, rgba(235, 244, 255, 0.98) 100%),
-        linear-gradient(115deg, rgba(255, 255, 255, 0.74) 0%, rgba(214, 233, 255, 0.42) 40%, rgba(240, 247, 255, 0.84) 100%);
+    background: linear-gradient(180deg, rgba(247, 251, 255, 0.08) 0%, rgba(239, 246, 255, 0.26) 54%, rgba(247, 251, 255, 0.72) 100%);
 }
 
 .top-section::after {
     content: "";
     position: absolute;
     inset: auto 0 0;
-    height: 8rem;
-    background: linear-gradient(180deg, rgba(247, 251, 255, 0), rgba(247, 251, 255, 1));
+    height: 4.6rem;
+    background: linear-gradient(180deg, rgba(247, 251, 255, 0), rgba(247, 251, 255, 0.78) 74%, rgba(247, 251, 255, 0.94) 100%);
 }
 
 .hero-shell {
     position: relative;
     z-index: 1;
-    max-width: 42rem;
-    padding: clamp(1.5rem, 4vw, 2.45rem);
-    border: 1px solid rgba(255, 255, 255, 0.78);
-    border-radius: 2rem;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.58));
-    box-shadow: 0 24px 60px rgba(0, 79, 160, 0.12);
-    backdrop-filter: blur(18px) saturate(140%);
+    max-width: 38rem;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
 }
 
 .hero-kicker {
@@ -190,25 +188,27 @@ section {
     font-size: 0.88rem;
     font-weight: 600;
     letter-spacing: -0.01em;
-    color: var(--accent-strong);
+    color: #0a4fa3;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
 }
 
 .top-section .display-3 {
     margin-bottom: 0;
     font-family: var(--body-font);
     font-size: clamp(2.55rem, 6vw, 5rem);
-    font-weight: 700;
+    font-weight: 740;
     line-height: 1;
     letter-spacing: -0.06em;
     text-wrap: balance;
-    color: var(--ink);
+    color: #0f2740;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.58);
 }
 
 .hero-actions {
     display: flex;
     align-items: center;
     gap: 0.9rem;
-    margin-top: 1.35rem;
+    margin-top: 1.15rem;
 }
 
 .hero-button {
@@ -596,7 +596,7 @@ footer a:focus {
 
     .top-section {
         min-height: 23rem;
-        padding: 7.4rem 0 7rem;
+        padding: 7rem 0 6.2rem;
     }
 
     .hero-shell {
@@ -657,12 +657,12 @@ footer a:focus {
 
     .top-section {
         min-height: 18rem;
-        padding: 6.8rem 0 5.8rem;
+        padding: 6.4rem 0 5.2rem;
     }
 
     .hero-shell {
-        padding: 1.2rem;
-        border-radius: 1.55rem;
+        padding: 0;
+        border-radius: 0;
     }
 
     .hero-kicker {
