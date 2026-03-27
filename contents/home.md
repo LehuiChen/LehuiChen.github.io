@@ -22,5 +22,5 @@ Visiting Student，<a href="https://chem.sustech.edu.cn/#/home" target="_blank">
 
 #### Research Interests
 
-Computer Science, Physical Chemistry, Organic Chemistry, AI4S.
+Machine Learning, Physical Chemistry, Organic Chemistry, AI4S.
 
