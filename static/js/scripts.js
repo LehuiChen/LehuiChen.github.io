@@ -8,6 +8,14 @@ function setSafeExternalLinkDefaults(root) {
   })
 }
 
+function removeLegacyInlineStyles() {
+  document.querySelectorAll('style').forEach((styleTag) => {
+    if (styleTag.textContent.includes('.legacy-inline-card')) {
+      styleTag.remove()
+    }
+  })
+}
+
 function removeInlinePresentation(root) {
   root.querySelectorAll('[style]').forEach((element) => {
     element.removeAttribute('style')
@@ -68,14 +76,57 @@ function enhanceCardSection(sectionName, container) {
   })
 }
 
+function enhanceHomeSection(container) {
+  const children = Array.from(container.children)
+  const firstParagraph = children.find((element) => element.tagName === 'P')
+
+  if (firstParagraph) {
+    firstParagraph.classList.add('section-intro', 'section-intro-highlight')
+  }
+
+  const remaining = Array.from(container.children).filter((element) => element !== firstParagraph)
+  if (!remaining.length) {
+    return
+  }
+
+  const detailGrid = document.createElement('div')
+  detailGrid.className = 'home-details-grid'
+
+  let currentCard = null
+
+  remaining.forEach((element) => {
+    if (/^H[1-6]$/.test(element.tagName)) {
+      currentCard = document.createElement('section')
+      currentCard.className = 'home-detail-card'
+      element.classList.add('home-detail-title')
+      detailGrid.appendChild(currentCard)
+      currentCard.appendChild(element)
+      return
+    }
+
+    if (!currentCard) {
+      currentCard = document.createElement('section')
+      currentCard.className = 'home-detail-card home-detail-card-plain'
+      detailGrid.appendChild(currentCard)
+    }
+
+    if (element.tagName === 'P') {
+      element.classList.add('home-detail-entry')
+    }
+
+    currentCard.appendChild(element)
+  })
+
+  if (detailGrid.children.length) {
+    container.appendChild(detailGrid)
+  }
+}
+
 function enhanceSectionContent(sectionName, container) {
   setSafeExternalLinkDefaults(container)
 
   if (sectionName === 'home') {
-    const firstParagraph = Array.from(container.children).find((element) => element.tagName === 'P')
-    if (firstParagraph) {
-      firstParagraph.classList.add('section-intro', 'section-intro-highlight')
-    }
+    enhanceHomeSection(container)
   }
 
   if (sectionName === 'team' || sectionName === 'news') {
@@ -100,6 +151,8 @@ function typesetSection(container) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
+  removeLegacyInlineStyles()
+
   const mainNav = document.body.querySelector('#mainNav')
   if (mainNav) {
     new bootstrap.ScrollSpy(document.body, {

@@ -92,31 +92,30 @@
 
   <header class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
     <div class="container px-5">
-      <div class="hero-shell">
-        <p class="hero-kicker">Lehui Chen</p>
-        <h1 id="top-section-bg-text" class="display-3 lh-1"></h1>
-        <div class="hero-actions">
-          <a class="hero-button hero-button-primary" href="https://github.com/LehuiChen" target="_blank" rel="noopener noreferrer">
-            <i class="bi bi-github"></i>
-            <span>GitHub</span>
-          </a>
+      <div class="hero-grid">
+        <div class="hero-shell">
+          <p class="hero-kicker">Lehui Chen</p>
+          <h1 id="top-section-bg-text" class="display-3 lh-1"></h1>
+          <div class="hero-actions">
+            <a class="hero-button hero-button-primary" href="https://github.com/LehuiChen" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-portrait">
+          <div id="avatar">
+            <img class="shadow" src="static/assets/img/photo.png" alt="Portrait of Lehui Chen" />
+          </div>
         </div>
       </div>
     </div>
   </header>
 
-  <div class="profile-overlap">
-    <div class="container px-5">
-      <div id="avatar">
-        <img class="shadow" src="static/assets/img/photo.png" alt="Portrait of Lehui Chen" />
-      </div>
-    </div>
-  </div>
-
   <main class="page-shell">
     <section class="content-section section-light" id="home">
       <div class="container px-5">
-        <div class="section-panel section-panel-home">
+        <div class="section-panel section-panel-home home-panel">
           <header class="section-heading">
             <p class="section-eyebrow">Profile</p>
             <h2 id="home-subtitle"></h2>
@@ -177,30 +176,34 @@
     <section class="content-section section-muted" id="visitors">
       <div class="container px-5">
         <div class="section-panel visitor-panel">
-          <header class="section-heading">
-            <p class="section-eyebrow">Audience</p>
-            <h2><i class="bi bi-globe2"></i>&nbsp;VISITOR MAP</h2>
-          </header>
-          <div class="visitor-map-shell">
-            <p class="visitor-map-intro">
-              A public snapshot of approximate visitor locations collected across this site.
-            </p>
-            <div class="visitor-widget">
-              <a class="visitor-map-link" href="https://info.flagcounter.com/DfWq" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="https://s01.flagcounter.com/map/DfWq/size_m/txt_12355B/border_C8DCF5/pageviews_0/viewers_3/flags_0/"
-                  alt="Visitor map showing approximate countries of visitors."
-                  loading="lazy"
-                />
-              </a>
+          <div class="visitor-map-stage">
+            <div class="visitor-map-copy">
+              <header class="section-heading visitor-heading">
+                <p class="section-eyebrow">Audience</p>
+                <h2><i class="bi bi-globe2"></i>&nbsp;VISITOR MAP</h2>
+              </header>
+              <div class="visitor-map-shell">
+                <p class="visitor-map-intro">
+                  A public snapshot of approximate visitor locations collected across this site.
+                </p>
+                <p class="visitor-map-note">
+                  Detailed charts and visit history are hosted by Flag Counter and based on approximate geolocation.
+                </p>
+                <a class="visitor-map-cta" href="https://info.flagcounter.com/DfWq" target="_blank" rel="noopener noreferrer">
+                  View full history
+                </a>
+              </div>
             </div>
-            <div class="visitor-map-meta">
-              <p class="visitor-map-note">
-                Detailed charts and visit history are hosted by Flag Counter and based on approximate geolocation.
-              </p>
-              <a class="visitor-map-cta" href="https://info.flagcounter.com/DfWq" target="_blank" rel="noopener noreferrer">
-                View full history
-              </a>
+            <div class="visitor-map-visual">
+              <div class="visitor-widget">
+                <a class="visitor-map-link" href="https://info.flagcounter.com/DfWq" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="https://s01.flagcounter.com/map/DfWq/size_m/txt_12355B/border_C8DCF5/pageviews_0/viewers_3/flags_0/"
+                    alt="Visitor map showing approximate countries of visitors."
+                    loading="lazy"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
