@@ -1,206 +1,83 @@
-const content_dir = 'contents/'
-const config_file = 'config.yml'
-const section_names = ['home', 'publications', 'awards', 'team', 'news']
+const CONTENT_DIRECTORY = 'contents/'
+const CONTENT_SECTIONS = ['home', 'publications']
 
-function setSafeExternalLinkDefaults(root) {
-  root.querySelectorAll('a[target="_blank"]').forEach((link) => {
+function applyConfig(config) {
+  Object.entries(config).forEach(([id, value]) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.textContent = value
+    }
+  })
+}
+
+async function loadConfig() {
+  const response = await fetch(`${CONTENT_DIRECTORY}config.yml`)
+  if (!response.ok) {
+    throw new Error(`Unable to load config.yml (${response.status})`)
+  }
+
+  const config = jsyaml.load(await response.text())
+  applyConfig(config)
+}
+
+async function loadMarkdown(sectionName) {
+  const container = document.getElementById(`${sectionName}-md`)
+  const response = await fetch(`${CONTENT_DIRECTORY}${sectionName}.md`)
+
+  if (!response.ok) {
+    throw new Error(`Unable to load ${sectionName}.md (${response.status})`)
+  }
+
+  container.innerHTML = marked.parse(await response.text())
+
+  // Markdown 中可能包含外部链接，统一补充安全属性以避免新页面获得 opener 权限。
+  container.querySelectorAll('a[target="_blank"]').forEach((link) => {
     link.rel = 'noopener noreferrer'
   })
 }
 
-function removeLegacyInlineStyles() {
-  document.querySelectorAll('style').forEach((styleTag) => {
-    if (styleTag.textContent.includes('.legacy-inline-card')) {
-      styleTag.remove()
+function showLoadError(sectionName) {
+  const container = document.getElementById(`${sectionName}-md`)
+  container.innerHTML = '<p class="error-message">This section could not be loaded. Please refresh the page and try again.</p>'
+}
+
+function updateActiveNavigation() {
+  const navigationLinks = Array.from(document.querySelectorAll('.site-nav a'))
+  const sections = navigationLinks
+    .map((link) => document.getElementById(link.dataset.section))
+    .filter(Boolean)
+
+  // 选取最接近视口上缘的已到达区块，避免长页面滚动时导航状态频繁跳动。
+  const activeSection = sections.reduce((active, section) => {
+    return section.getBoundingClientRect().top <= 140 ? section : active
+  }, sections[0])
+
+  navigationLinks.forEach((link) => {
+    const isActive = link.dataset.section === activeSection.id
+    if (isActive) {
+      link.setAttribute('aria-current', 'true')
+    } else {
+      link.removeAttribute('aria-current')
     }
   })
 }
 
-function removeInlinePresentation(root) {
-  root.querySelectorAll('[style]').forEach((element) => {
-    element.removeAttribute('style')
-  })
-
-  root.querySelectorAll('[onmouseover],[onmouseout]').forEach((element) => {
-    element.removeAttribute('onmouseover')
-    element.removeAttribute('onmouseout')
-  })
-}
-
-function enhanceCardSection(sectionName, container) {
-  removeInlinePresentation(container)
-
-  const firstParagraph = Array.from(container.children).find((element) => element.tagName === 'P')
-  if (firstParagraph) {
-    firstParagraph.classList.add('section-intro')
-  }
-
-  const headings = Array.from(container.children).filter((element) => /^H[1-6]$/.test(element.tagName))
-  headings.forEach((heading) => {
-    heading.classList.add('section-redundant-heading')
-  })
-
-  const cardGrid = Array.from(container.children).find((element) => {
-    return element.tagName === 'DIV' && Array.from(element.children).some((child) => child.tagName === 'DIV')
-  })
-
-  if (!cardGrid) {
-    return
-  }
-
-  cardGrid.classList.add('card-grid')
-
-  Array.from(cardGrid.children).forEach((card) => {
-    if (card.tagName !== 'DIV') {
-      return
-    }
-
-    card.classList.add('content-card', `${sectionName}-card`)
-
-    const title = card.querySelector('h3')
-    if (title) {
-      title.classList.add('content-card-title')
-    }
-
-    const text = card.querySelector('p')
-    if (text) {
-      text.classList.add('content-card-text')
-    }
-
-    const media = card.querySelector('img')
-    if (media) {
-      media.classList.add('content-card-media')
-      media.loading = 'lazy'
-      media.decoding = 'async'
-    }
-  })
-}
-
-function enhanceHomeSection(container) {
-  const children = Array.from(container.children)
-  const firstParagraph = children.find((element) => element.tagName === 'P')
-
-  if (firstParagraph) {
-    firstParagraph.classList.add('section-intro', 'section-intro-highlight')
-  }
-
-  const remaining = Array.from(container.children).filter((element) => element !== firstParagraph)
-  if (!remaining.length) {
-    return
-  }
-
-  const detailGrid = document.createElement('div')
-  detailGrid.className = 'home-details-grid'
-
-  let currentCard = null
-
-  remaining.forEach((element) => {
-    if (/^H[1-6]$/.test(element.tagName)) {
-      currentCard = document.createElement('section')
-      currentCard.className = 'home-detail-card'
-      element.classList.add('home-detail-title')
-      detailGrid.appendChild(currentCard)
-      currentCard.appendChild(element)
-      return
-    }
-
-    if (!currentCard) {
-      currentCard = document.createElement('section')
-      currentCard.className = 'home-detail-card home-detail-card-plain'
-      detailGrid.appendChild(currentCard)
-    }
-
-    if (element.tagName === 'P') {
-      element.classList.add('home-detail-entry')
-    }
-
-    currentCard.appendChild(element)
-  })
-
-  if (detailGrid.children.length) {
-    container.appendChild(detailGrid)
-  }
-}
-
-function enhanceSectionContent(sectionName, container) {
-  setSafeExternalLinkDefaults(container)
-
-  if (sectionName === 'home') {
-    enhanceHomeSection(container)
-  }
-
-  if (sectionName === 'team' || sectionName === 'news') {
-    enhanceCardSection(sectionName, container)
-  }
-}
-
-function typesetSection(container) {
-  if (!window.MathJax) {
-    return Promise.resolve()
-  }
-
-  if (typeof window.MathJax.typesetPromise === 'function') {
-    return window.MathJax.typesetPromise([container])
-  }
-
-  if (typeof window.MathJax.typeset === 'function') {
-    window.MathJax.typeset([container])
-  }
-
-  return Promise.resolve()
-}
-
-window.addEventListener('DOMContentLoaded', () => {
-  removeLegacyInlineStyles()
-
-  const mainNav = document.body.querySelector('#mainNav')
-  if (mainNav) {
-    new bootstrap.ScrollSpy(document.body, {
-      target: '#mainNav',
-      offset: 74,
-    })
-  }
-
-  const navbarToggler = document.body.querySelector('.navbar-toggler')
-  const responsiveNavItems = [].slice.call(
-    document.querySelectorAll('#navbarResponsive .nav-link')
-  )
-
-  responsiveNavItems.forEach((responsiveNavItem) => {
-    responsiveNavItem.addEventListener('click', () => {
-      if (window.getComputedStyle(navbarToggler).display !== 'none') {
-        navbarToggler.click()
-      }
-    })
-  })
-
-  fetch(content_dir + config_file)
-    .then(response => response.text())
-    .then(text => {
-      const yml = jsyaml.load(text)
-      Object.keys(yml).forEach((key) => {
-        try {
-          document.getElementById(key).innerHTML = yml[key]
-        } catch {
-          console.log('Unknown id and value: ' + key + ',' + yml[key].toString())
-        }
-      })
-    })
-    .catch(error => console.log(error))
-
-  setSafeExternalLinkDefaults(document)
+window.addEventListener('DOMContentLoaded', async () => {
   marked.use({ mangle: false, headerIds: false })
 
-  section_names.forEach((name) => {
-    fetch(content_dir + name + '.md')
-      .then(response => response.text())
-      .then(markdown => {
-        const html = marked.parse(markdown)
-        const container = document.getElementById(name + '-md')
-        container.innerHTML = html
-        enhanceSectionContent(name, container)
-        return typesetSection(container)
-      })
-      .catch(error => console.log(error))
+  const configTask = loadConfig().catch((error) => {
+    console.error(error)
   })
+
+  const contentTasks = CONTENT_SECTIONS.map((sectionName) => {
+    return loadMarkdown(sectionName).catch((error) => {
+      console.error(error)
+      showLoadError(sectionName)
+    })
+  })
+
+  await Promise.all([configTask, ...contentTasks])
+  updateActiveNavigation()
+
+  window.addEventListener('scroll', updateActiveNavigation, { passive: true })
 })
