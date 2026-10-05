@@ -14,14 +14,14 @@ Phone: 13927055769
   <article class="card">
     <div class="experience-item"><div class="experience-content">
     <p class="exp-title"><strong>Southern University of Science and Technology</strong></p>
-    <p class="exp-detail">M.S. in Chemistry · Advisor: <a href="https://faculty.sustech.edu.cn/?tagid=oscarchung&iscss=1&snapid=1&orderby=date&go=2">Prof. Oscar Chung</a></p>
+    <p class="exp-detail">M.S. in Chemistry · Advisor: <a href="https://faculty.sustech.edu.cn/?tagid=oscarchung&iscss=1&snapid=1&orderby=date&go=2">Prof. Lung Wa CHUNG（钟龙华）</a></p>
     <p class="exp-period">2026.09–2029.06 (expected)</p>
     </div></div>
   </article>
   <article class="card">
     <div class="experience-item"><div class="experience-content">
     <p class="exp-title"><strong>Southern University of Science and Technology</strong></p>
-    <p class="exp-detail">Visiting Student · Department of Chemistry · Prof. Oscar Chung Lab</p>
+    <p class="exp-detail">Visiting Student · Department of Chemistry · Prof. Lung Wa CHUNG（钟龙华） Lab</p>
     <p class="exp-period">2025.12–2026.08</p>
     </div></div>
   </article>
