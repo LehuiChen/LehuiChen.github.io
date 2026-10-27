@@ -4,4 +4,4 @@ Research work will be updated here.
 
 #### Academic Competitions
 
-**China International University Student Innovation Competition (2024)** — Gold Prize
+**2024 China International College Students' Innovation Competition** — Gold Prize
